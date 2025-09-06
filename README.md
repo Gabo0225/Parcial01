@@ -6,10 +6,12 @@
 
 - El error es de sintaxis (no se ejecuta)
 - El la linea 11 hace falta cerrar un parentesis para llamar corerctamente la función
-`print(invertir_lista([1,2,3,4,5])`
+  ```python
+  print(invertir_lista([1,2,3,4,5])
 
 - Linea corregida
-`print(invertir_lista([1,2,3,4,5]))`
+  ```python
+  print(invertir_lista([1,2,3,4,5]))
 
 ## Errores encontrados en opp.py
 
