@@ -6,22 +6,26 @@
 
 - El error es de sintaxis (no se ejecuta)
 - El la linea 11 hace falta cerrar un parentesis para llamar corerctamente la función
-'''print(invertir_lista([1,2,3,4,5])'''
+`print(invertir_lista([1,2,3,4,5])`
 
 - Linea corregida
-´print(invertir_lista([1,2,3,4,5]))´
+`print(invertir_lista([1,2,3,4,5]))`
 
 ## Errores encontrados en opp.py
 
-- EL error es de logica 
-- El ´if´ de la funcion ´def retirar(self, cantidad):´ unicamente evalua el caso cuando la cantidad a retirar es menor a la que hay
-´if cantidad < self.saldo:
-            self.saldo = self.saldo - cantidad´
+- El error es de lógica.
+- El `if` de la función `def retirar(self, cantidad):` únicamente evalúa el caso cuando la cantidad a retirar es menor que el saldo.
+- Código original:
+  ```python
+  if cantidad < self.saldo:
+      self.saldo = self.saldo - cantidad
 
-- Se debe poder retirar la cantidad igual a la que hay en el momento, adicional que muestre el saldo despues de hacer el retiro 
-- Linea corregida
-´def retirar(self, cantidad):
-        if cantidad <= self.saldo:
-            self.saldo = self.saldo - cantidad
-            print(f"tu saldo actual es {self.saldo}")´
+- Se debe poder retirar la cantidad igual a la que hay en el momento; adicionalmente, que muestre el saldo después de hacer el retiro.
+- Línea corregida:
+
+```python
+def retirar(self, cantidad):
+    if cantidad <= self.saldo:
+        self.saldo = self.saldo - cantidad
+        print(f"Tu saldo actual es {self.saldo}")
 
