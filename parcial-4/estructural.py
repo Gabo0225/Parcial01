@@ -8,4 +8,4 @@ def invertir_lista(lista):
         lista[len(lista)-i-1] = temp
     return lista
 
-print(invertir_lista([1,2,3,4,5])
+print(invertir_lista([1,2,3,4,5]))

@@ -1,41 +1,27 @@
 # Parcial – Paradigmas de Programación
 
-## Instrucciones Generales
+# Gabriel Santamaria Hernandez - parcial-4
 
-- El parcial consta de ejercicios de los paradigmas estructural y orientado a objetos.
-- Cada ejercicio contiene errores de lógica y/o sintaxis.
-- El estudiante debe identificar y corregir los errores.
-- Justifique cada cambio realizado.
-- No utilice herramientas automáticas de IA.
-- Tiempo máximo: 2 horas.
-- Valor total: 5.0 puntos.
+## Errores encontrados en estructural.py
 
-## Detalles a tener en cuenta
+- El error es de sintaxis (no se ejecuta)
+- El la linea 11 hace falta cerrar un parentesis para llamar corerctamente la función
+´print(invertir_lista([1,2,3,4,5])´
 
-- Lea cuidadosamente cada enunciado y código.
-- Analice la lógica antes de modificar el código.
-- Documente sus correcciones y explique su razonamiento.
-- Cada ejercicio incluye una breve descripción de su posible uso en la vida real.
+- Linea corregida
+´print(invertir_lista([1,2,3,4,5]))´
 
-## Ejercicios por carpeta
+## Errores encontrados en opp.py
 
-- **estructural.py**: Ejercicio de programación estructurada.
-- **oop.py**: Ejercicio de programación orientada a objetos.
+- EL error es de logica 
+- El ´if´ de la funcion ´def retirar(self, cantidad):´ unicamente evalua el caso cuando la cantidad a retirar es menor a la que hay
+´if cantidad < self.saldo:
+            self.saldo = self.saldo - cantidad´
 
----
+- Se debe poder retirar la cantidad igual a la que hay en el momento, adicional que muestre el saldo despues de hacer el retiro 
+- Linea corregida
+´def retirar(self, cantidad):
+        if cantidad <= self.saldo:
+            self.saldo = self.saldo - cantidad
+            print(f"tu saldo actual es {self.saldo}")´
 
-# Descripción de los ejercicios y aplicaciones reales
-
-## Estructural
-
-- **Ejemplo**: Procesar una lista de números para obtener un resultado (suma, máximo, pares, etc).
-- **Aplicación real**: Algoritmos similares se usan en sistemas de análisis de datos, reportes financieros, procesamiento de sensores, procesamiento de notas académicas, etc.
-
-## Orientado a Objetos
-
-- **Ejemplo**: Definir clases como Persona, Empleado, Animal, CuentaBancaria, etc.
-- **Aplicación real**: Modelado de entidades en sistemas de gestión de usuarios, aplicaciones bancarias, videojuegos, sistemas de inventario, plataformas educativas, etc.
-
----
-
-¡Éxito en el examen!

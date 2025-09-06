@@ -6,10 +6,11 @@ class CuentaBancaria:
         self.titular = titular
         self.saldo = saldo
     def retirar(self, cantidad):
-        if cantidad < self.saldo:
+        if cantidad <= self.saldo:
             self.saldo = self.saldo - cantidad
+            print(f"Tu saldo actual es {self.saldo}")
         else:
             print('Fondos insuficientes')
 
 c = CuentaBancaria('Ana', 100)
-c.retirar(150)
+c.retirar(110)
